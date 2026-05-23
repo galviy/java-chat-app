@@ -1,2 +1,2 @@
 # java-chat-app
-Simple WebSocket Client-Server Application in Java
+A simple WebSocket client-server application written in Java featuring packet handling, command interaction, and MySQL integration.
