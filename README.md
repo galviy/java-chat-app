@@ -9,7 +9,7 @@ A simple WebSocket client-server application written in Java featuring packet ha
 - slf4j-api (get along with java web socket)
 
 
-# Packet Structure explanation
+# Packet struct explanation
 1. Client
    - Broadcast message to all current online
      ```json
@@ -27,8 +27,8 @@ A simple WebSocket client-server application written in Java featuring packet ha
         "message":"hello",
         "destination":"user1"
        }
+      ```
       
-     ```
      - Create Account
      ```json
       {
@@ -37,6 +37,7 @@ A simple WebSocket client-server application written in Java featuring packet ha
         "pass":"galvin123"
        }
      ```
+     
      - Login
         ```json
         {
