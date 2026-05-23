@@ -41,7 +41,7 @@ A simple WebSocket client-server application written in Java featuring packet ha
      - Login
         ```json
         {
-          "type":"create_account",
+          "type":"login",
           "username":"galvin",
           "pass":"galvin123"
          }
