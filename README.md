@@ -30,13 +30,13 @@ A simple WebSocket client-server application written in Java featuring packet ha
       ```
       
      - Create Account
-     ```json
-      {
-        "type":"create_account",
-        "username":"galvin",
-        "pass":"galvin123"
-       }
-     ```
+        ```json
+         {
+           "type":"create_account",
+           "username":"galvin",
+           "pass":"galvin123"
+          }
+        ```
      
      - Login
         ```json
