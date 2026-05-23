@@ -70,4 +70,36 @@ CREATE TABLE users (
     role ENUM('user', 'admin') DEFAULT 'user'
 );
 ```
-  
+
+# How to build
+
+since all the libraries already put along with the source code just
+```cli
+   bash build.sh
+```
+make sure to use newest java version or if you having problem with ur builder u can try the windows version 
+
+```bat
+   @echo off
+   
+   echo Building...
+   
+   if not exist bin mkdir bin
+   
+   javac -cp "lib/*;src" -d bin ^
+   src/Server.java ^
+   src/user_handler/User.java ^
+   src/packet_handler/Message.java ^
+   src/utilities_handler/MysqlUtility.java
+   
+   if %errorlevel% == 0 (
+       echo Build sukses!
+       echo Running...
+   
+       java -cp "lib/*;bin" Server
+   ) else (
+       echo Build gagal!
+   )
+   
+   pause
+```
