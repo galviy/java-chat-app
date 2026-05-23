@@ -1,5 +1,5 @@
 # java-chat-app
-A simple WebSocket client-server application written in Java featuring packet handling, command interaction, and MySQL integration.
+A simple WebSocket client-server application (Command line interact) written in Java featuring packet handling, command interaction, and MySQL integration.
 
 # Requirements & library
 - openjdk 26.0.1 ++
@@ -77,7 +77,7 @@ since all the libraries already put along with the source code just
 ```cli
    bash build.sh
 ```
-make sure to use newest java version or if you having problem with ur builder u can try the windows version 
+make sure to use newest java version or if you having problem with ur builder u can try the windows version (the .bat one) 
 
 ```bat
    @echo off
