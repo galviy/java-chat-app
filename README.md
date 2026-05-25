@@ -13,9 +13,9 @@ A simple WebSocket client-server application (Command line interact) written in 
 - /dm <user> <text> (sends private message to specific user)
 - /quit (disconnects from server)
 
-  # Change logs
-  - 25/5/2026 Added private message handler for server 
-  - 25/5/2026 Added private message command for client
+# Change logs
+- 25/5/2026 Added private message handler for server 
+- 25/5/2026 Added private message command for client
 
     
 # Packet struct documentations
