@@ -139,6 +139,21 @@ public class Client extends WebSocketClient {
                 } else {
                     System.out.println("[!] Pesan tidak boleh kosong.");
                 }
+            }  else if (input.startsWith("/dm ")) {
+                String[] parts = input.substring(4).split(" ", 2);
+
+                if (parts.length < 2) {
+                    System.out.println("[!] Format: /dm <username> <pesan>");
+                } else {
+                    String targetUser = parts[0];
+                    String msg = parts[1].trim();
+
+                    if (!msg.isEmpty()) {
+                        user.sendChat(msg, targetUser);
+                    } else {
+                        System.out.println("[!] Pesan tidak boleh kosong.");
+                    }
+                }
             } else {
                 System.out.println("[!] Perintah tidak dikenal. Gunakan /all <pesan> atau /quit");
             }
