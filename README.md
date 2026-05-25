@@ -75,7 +75,7 @@ CREATE TABLE users (
 );
 ```
 
-# How to build
+# How to build 
 
 since all the libraries already put along with the source code just
 ```cli
@@ -106,4 +106,9 @@ make sure to use newest java version or if you having problem with ur builder u 
    )
    
    pause
+```
+
+# Run client for windows
+```bat
+java -cp "lib/*;bin" Client
 ```
