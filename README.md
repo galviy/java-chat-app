@@ -10,7 +10,7 @@ A simple WebSocket client-server application (Command line interact) written in 
 
 # Client Commands
 - /all <text> (sends message to all available client)
-- /dm <user> <text> (sends private message to certain user)
+- /dm <user> <text> (sends private message to specific user)
 - /quit (disconnects from server)
   
 # Packet struct documentations
