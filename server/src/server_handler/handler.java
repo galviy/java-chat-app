@@ -108,7 +108,28 @@ public class handler{
                         send_to_client(conn, "you have broadcasted to " + sent + " users");
 
                     } else {
-                        // nanti dulu males hehe
+                        boolean found = false;
+
+                        Message packet = new Message("Private message from " + user.getUsername() + ": " + chat,"System");
+
+                        String privateJson = packet.build_Message();
+
+                        for (User available : users.values()) {
+
+                            if (available.getUsername().equalsIgnoreCase(destination)) {
+
+                                if (available.getConn().isOpen()) {
+                                    available.send(privateJson);
+                                    send_to_client(conn,"Sent private message to (" + destination + ")");
+                                    found = true;
+                                }
+                                break;
+                            }
+                        }
+
+                        if (!found) {
+                            send_to_client(conn, "User not found");
+                        }
                     }
                 } break;
 
