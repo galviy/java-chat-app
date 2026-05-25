@@ -8,7 +8,11 @@ A simple WebSocket client-server application (Command line interact) written in 
 - Java-WebSocket
 - slf4j-api (get along with java web socket)
 
-
+#Client Commands
+- /all <text> (sends message to all available client)
+- /dm <user> <text> (sends private message to certain user)
+- /quit (disconnects from server)
+  
 # Packet struct explanation
 1. Client
    - Broadcast message to all current online
